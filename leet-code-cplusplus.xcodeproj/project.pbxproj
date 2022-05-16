@@ -10,6 +10,7 @@
 		845890B22831DD9F00D67EAF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 845890B12831DD9F00D67EAF /* main.cpp */; };
 		845890BB2831DE1300D67EAF /* tree_node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 845890B92831DE1300D67EAF /* tree_node.cpp */; };
 		845890C12831DEFF00D67EAF /* no_94_inorder_traversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 845890BF2831DEFF00D67EAF /* no_94_inorder_traversal.cpp */; };
+		845890C42831E38E00D67EAF /* no_95_different_tree_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 845890C22831E38E00D67EAF /* no_95_different_tree_2.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		845890BA2831DE1300D67EAF /* tree_node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tree_node.hpp; sourceTree = "<group>"; };
 		845890BF2831DEFF00D67EAF /* no_94_inorder_traversal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = no_94_inorder_traversal.cpp; sourceTree = "<group>"; };
 		845890C02831DEFF00D67EAF /* no_94_inorder_traversal.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = no_94_inorder_traversal.hpp; sourceTree = "<group>"; };
+		845890C22831E38E00D67EAF /* no_95_different_tree_2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = no_95_different_tree_2.cpp; sourceTree = "<group>"; };
+		845890C32831E38E00D67EAF /* no_95_different_tree_2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = no_95_different_tree_2.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,8 @@
 			children = (
 				845890BF2831DEFF00D67EAF /* no_94_inorder_traversal.cpp */,
 				845890C02831DEFF00D67EAF /* no_94_inorder_traversal.hpp */,
+				845890C22831E38E00D67EAF /* no_95_different_tree_2.cpp */,
+				845890C32831E38E00D67EAF /* no_95_different_tree_2.hpp */,
 			);
 			path = binary_tree;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 				845890C12831DEFF00D67EAF /* no_94_inorder_traversal.cpp in Sources */,
 				845890B22831DD9F00D67EAF /* main.cpp in Sources */,
 				845890BB2831DE1300D67EAF /* tree_node.cpp in Sources */,
+				845890C42831E38E00D67EAF /* no_95_different_tree_2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
