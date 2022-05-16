@@ -17,11 +17,11 @@
  */
 
 void levelOrder(int deep, TreeNode* node, vector<vector<int>>& ans) {
-    if (deep == ans.size()) {
-        ans.emplace_back(vector<int>{});
-    }
     if (!node) {
         return;
+    }
+    if (deep == ans.size()) {
+        ans.emplace_back(vector<int>{});
     }
     ans[deep].emplace_back(node->val);
     if (node->left)
