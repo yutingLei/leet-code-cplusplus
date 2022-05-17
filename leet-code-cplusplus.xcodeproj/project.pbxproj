@@ -20,6 +20,7 @@
 		845890DB28321B8200D67EAF /* no_103_zigzag_level_order.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 845890D928321B8200D67EAF /* no_103_zigzag_level_order.cpp */; };
 		845890DE2832211600D67EAF /* no_104_max_depth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 845890DC2832211600D67EAF /* no_104_max_depth.cpp */; };
 		845890E1283223AF00D67EAF /* no_105_build_tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 845890DF283223AF00D67EAF /* no_105_build_tree.cpp */; };
+		845890E42832277100D67EAF /* no_106_build_tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 845890E22832277100D67EAF /* no_106_build_tree.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -61,6 +62,8 @@
 		845890DD2832211600D67EAF /* no_104_max_depth.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = no_104_max_depth.hpp; sourceTree = "<group>"; };
 		845890DF283223AF00D67EAF /* no_105_build_tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = no_105_build_tree.cpp; sourceTree = "<group>"; };
 		845890E0283223AF00D67EAF /* no_105_build_tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = no_105_build_tree.hpp; sourceTree = "<group>"; };
+		845890E22832277100D67EAF /* no_106_build_tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = no_106_build_tree.cpp; sourceTree = "<group>"; };
+		845890E32832277100D67EAF /* no_106_build_tree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = no_106_build_tree.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +153,8 @@
 				845890DD2832211600D67EAF /* no_104_max_depth.hpp */,
 				845890DF283223AF00D67EAF /* no_105_build_tree.cpp */,
 				845890E0283223AF00D67EAF /* no_105_build_tree.hpp */,
+				845890E22832277100D67EAF /* no_106_build_tree.cpp */,
+				845890E32832277100D67EAF /* no_106_build_tree.hpp */,
 			);
 			path = binary_tree;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 				845890D52831FCD900D67EAF /* no_101_symmetric.cpp in Sources */,
 				845890D82831FEE800D67EAF /* no_102_level_order.cpp in Sources */,
 				845890C42831E38E00D67EAF /* no_95_different_tree_2.cpp in Sources */,
+				845890E42832277100D67EAF /* no_106_build_tree.cpp in Sources */,
 				845890DB28321B8200D67EAF /* no_103_zigzag_level_order.cpp in Sources */,
 				845890DE2832211600D67EAF /* no_104_max_depth.cpp in Sources */,
 			);
