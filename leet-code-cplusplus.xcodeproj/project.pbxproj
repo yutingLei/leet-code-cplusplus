@@ -25,6 +25,7 @@
 		845890EA2833309B00D67EAF /* no_108_sorted_arr_2_bst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 845890E82833309B00D67EAF /* no_108_sorted_arr_2_bst.cpp */; };
 		845890ED283334E300D67EAF /* no_109_sorted_list_2_bst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 845890EB283334E300D67EAF /* no_109_sorted_list_2_bst.cpp */; };
 		845890F02833354500D67EAF /* list_node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 845890EE2833354500D67EAF /* list_node.cpp */; };
+		845890F328334E2000D67EAF /* no_124_max_path_sum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 845890F128334E2000D67EAF /* no_124_max_path_sum.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -76,6 +77,8 @@
 		845890EC283334E300D67EAF /* no_109_sorted_list_2_bst.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = no_109_sorted_list_2_bst.hpp; sourceTree = "<group>"; };
 		845890EE2833354500D67EAF /* list_node.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = list_node.cpp; sourceTree = "<group>"; };
 		845890EF2833354500D67EAF /* list_node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = list_node.hpp; sourceTree = "<group>"; };
+		845890F128334E2000D67EAF /* no_124_max_path_sum.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = no_124_max_path_sum.cpp; sourceTree = "<group>"; };
+		845890F228334E2000D67EAF /* no_124_max_path_sum.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = no_124_max_path_sum.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +178,8 @@
 				845890E92833309B00D67EAF /* no_108_sorted_arr_2_bst.hpp */,
 				845890EB283334E300D67EAF /* no_109_sorted_list_2_bst.cpp */,
 				845890EC283334E300D67EAF /* no_109_sorted_list_2_bst.hpp */,
+				845890F128334E2000D67EAF /* no_124_max_path_sum.cpp */,
+				845890F228334E2000D67EAF /* no_124_max_path_sum.hpp */,
 			);
 			path = binary_tree;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 				845890EA2833309B00D67EAF /* no_108_sorted_arr_2_bst.cpp in Sources */,
 				845890DE2832211600D67EAF /* no_104_max_depth.cpp in Sources */,
 				845890F02833354500D67EAF /* list_node.cpp in Sources */,
+				845890F328334E2000D67EAF /* no_124_max_path_sum.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
