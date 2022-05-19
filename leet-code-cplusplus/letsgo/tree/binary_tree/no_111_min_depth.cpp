@@ -29,7 +29,7 @@ int minDepth(TreeNode* root) {
         for (int i = 0; i < qsize; i++) {
             TreeNode* node = q.front();
             q.pop();
-            if (node->left == nullptr || node->right == nullptr) {
+            if (node->left == nullptr && node->right == nullptr) {
                 return ans;
             }
             if (node->left) {
