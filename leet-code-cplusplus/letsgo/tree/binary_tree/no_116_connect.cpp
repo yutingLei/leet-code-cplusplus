@@ -29,7 +29,7 @@ void helper(Node* node) {
     node->left->next = node->right;
     // 如果当前节点与其它子树有连接, 连接这两个东东
     if (node->next) {
-        node->right = node->next->right;
+        node->right->next = node->next->left;
     }
     // 走左子树
     helper(node->left);

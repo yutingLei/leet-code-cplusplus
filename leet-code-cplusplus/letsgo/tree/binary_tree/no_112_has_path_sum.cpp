@@ -58,3 +58,38 @@ bool hasPathSum(TreeNode* root, int targetSum) {
     }
     return false;
 }
+
+bool hasSumPathR(TreeNode* root, int targetNum) {
+    // 递归法
+//    if (!root) return false;
+//    if (!root->left && !root->right) return root->val == targetNum;
+//    return hasSumPathR(root->left, targetNum - root->val) || hasSumPathR(root->right, targetNum - root->val);
+    
+    // 迭代法
+    if (!root) return false;
+    queue<TreeNode*> nodeq;
+    nodeq.push(root);
+    queue<int> numq;
+    numq.push(targetNum);
+    while (!nodeq.empty()) {
+        size_t qsize = nodeq.size();
+        for (int i = 0; i < qsize; i++) {
+            TreeNode* node = nodeq.front();
+            nodeq.pop();
+            int num = numq.front();
+            numq.pop();
+            if (!node->left && !node->right && node->val == num) {
+                return true;
+            }
+            if (node->left) {
+                nodeq.push(node->left);
+                numq.push(num - node->val);
+            }
+            if (node->right) {
+                nodeq.push(node->right);
+                numq.push(num - node->val);
+            }
+        }
+    }
+    return false;
+}

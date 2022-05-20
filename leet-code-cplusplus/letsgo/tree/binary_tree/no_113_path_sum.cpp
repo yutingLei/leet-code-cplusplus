@@ -5,7 +5,11 @@
 //  Created by admin on 2022/5/19.
 //
 
+#include <queue>
+#include <unordered_map>
 #include "no_113_path_sum.hpp"
+
+using namespace std;
 
 /**
  * 本地是题112的升级版
@@ -41,5 +45,64 @@ void helper(TreeNode* node, int targetSum) {
 
 vector<vector<int>> pathSum(TreeNode* root, int targetSum) {
     helper(root, targetSum);
+    return ans;
+}
+
+void helperR(TreeNode* node, int num) {
+    if (!node) return;
+    path.emplace_back(node->val);
+    num -= node->val;
+    if (!node->left && !node->right && num == 0) {
+        ans.emplace_back(path);
+    }
+    helperR(node->left, num);
+    helperR(node->right, num);
+    path.pop_back();
+}
+
+unordered_map<TreeNode*, TreeNode*> records;
+vector<int> getPath(TreeNode* node) {
+    vector<int> tmp;
+    while (node) {
+        tmp.emplace_back(node->val);
+        node = records[node];
+    }
+    reverse(tmp.begin(), tmp.end());
+    return tmp;
+}
+vector<vector<int>> pathSumR(TreeNode* root, int targetNum) {
+    // 递归法
+//    helperR(root, targetNum);
+//    return ans;
+    
+    // 迭代
+    
+    if (!root) return ans;
+    queue<TreeNode*> nodeq;
+    nodeq.push(root);
+    queue<int> numq;
+    numq.push(targetNum);
+    while (!nodeq.empty()) {
+        size_t qsize = nodeq.size();
+        for (int i = 0; i < qsize; i++) {
+            TreeNode* node = nodeq.front();
+            nodeq.pop();
+            int num = numq.front();
+            numq.pop();
+            if (!node->left && !node->right && node->val == num) {
+                ans.emplace_back(getPath(node));
+            }
+            if (node->left) {
+                nodeq.push(node->left);
+                numq.push(num - node->val);
+                records[node->left] = node;
+            }
+            if (node->right) {
+                nodeq.push(node->right);
+                numq.push(num - node->val);
+                records[node->right] = node;
+            }
+        }
+    }
     return ans;
 }
