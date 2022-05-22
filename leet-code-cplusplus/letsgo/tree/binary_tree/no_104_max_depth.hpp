@@ -19,5 +19,9 @@
  *
  * 说明: 叶子节点是指没有子节点的节点。
  */
-int maxDepth(TreeNode* root);
+
+class No104Solution {
+public:
+    int maxDepth(TreeNode* root);
+};
 #endif /* no_104_max_depth_hpp */

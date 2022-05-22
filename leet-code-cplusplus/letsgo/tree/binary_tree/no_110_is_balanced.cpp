@@ -22,7 +22,7 @@ using namespace std;
  *
  */
 
-int helper(TreeNode* node) {
+int No110Solution::helper(TreeNode* node) {
     if (!node) {
         return 0;
     }
@@ -46,6 +46,6 @@ int helper(TreeNode* node) {
     return max(left, right) + 1;
 }
 
-bool isBalanced(TreeNode* root) {
+bool No110Solution::isBalanced(TreeNode* root) {
     return helper(root) != -1;
 }

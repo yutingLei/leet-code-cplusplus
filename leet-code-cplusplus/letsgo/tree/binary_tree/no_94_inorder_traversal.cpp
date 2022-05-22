@@ -20,7 +20,7 @@
  **/
 
 /** 二叉树遍历经典模板 */
-void classicTraversal(TreeNode* node, vector<int>& ans) {
+void No94Solution::classicTraversal(TreeNode* node, vector<int>& ans) {
     if (!node) {
         return;
     }
@@ -36,7 +36,7 @@ void classicTraversal(TreeNode* node, vector<int>& ans) {
     // ans.emplace_back(node->val);
 }
 
-vector<int> inorderTraversal(TreeNode* root) {
+vector<int> No94Solution::inorderTraversal(TreeNode* root) {
     vector<int> ans;
     
     // 1. 递归法

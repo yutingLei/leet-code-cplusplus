@@ -34,7 +34,7 @@ using namespace std;
 
 int maxSum = INT_MIN;
 
-int helper(TreeNode* node) {
+int No124Solution::helper(TreeNode* node) {
 //    // 如果节点为空, 直接返回0
 //    if (!node) {
 //        return 0;
@@ -58,7 +58,7 @@ int helper(TreeNode* node) {
     return max(0, node->val + max(left, right));
 }
 
-int maxPathSum(TreeNode* root) {
+int No124Solution::maxPathSum(TreeNode* root) {
     helper(root);
     return maxSum;
 }

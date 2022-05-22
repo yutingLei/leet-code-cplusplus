@@ -5,8 +5,8 @@
 //  Created by admin on 2022/5/17.
 //
 
-#ifndef no_108_sorted_arr_2_bts_hpp
-#define no_108_sorted_arr_2_bts_hpp
+#ifndef no_108_sorted_arr_2_bst_hpp
+#define no_108_sorted_arr_2_bst_hpp
 
 #include <stdio.h>
 #include <vector>
@@ -20,5 +20,11 @@ using namespace std;
  * 描述: 给你一个整数数组 nums, 其中元素已经按 升序 排列, 请你将其转换为一棵 高度平衡 二叉搜索树.
  *      高度平衡 二叉树是一棵满足「每个节点的左右两个子树的高度差的绝对值不超过 1 」的二叉树.
  */
-TreeNode* sortedArrayToBTS(vector<int>& nums);
+
+class No108Solution {
+private:
+    TreeNode* buildBST(int l, int r, vector<int>& nums);
+public:
+    TreeNode* sortedArrayToBTS(vector<int>& nums);
+};
 #endif /* no_108_sorted_arr_2_bts_hpp */

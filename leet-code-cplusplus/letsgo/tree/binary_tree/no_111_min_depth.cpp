@@ -19,7 +19,7 @@ using namespace std;
  *
  */
 
-int minDepth(TreeNode* root) {
+int No111Solution::minDepth(TreeNode* root) {
     if (!root) { return 0; }
     queue<TreeNode*> q;
     q.push(root);

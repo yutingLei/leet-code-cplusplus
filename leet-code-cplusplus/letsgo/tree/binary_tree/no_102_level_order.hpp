@@ -19,5 +19,11 @@ using namespace std;
  *
  * 描述: 给你二叉树的根节点 root, 返回其节点值的 层序遍历. (即逐层地，从左到右访问所有节点).
  */
-vector<vector<int>> levelOrder(TreeNode* root);
+
+class No102Solution {
+private:
+    void levelOrder(int deep, TreeNode* node, vector<vector<int>>& ans);
+public:
+    vector<vector<int>> levelOrder(TreeNode* root);
+};
 #endif /* no_102_level_order_hpp */

@@ -20,5 +20,11 @@ using namespace std;
  * 描述: 给你二叉树的根节点 root, 返回其节点值的 锯齿形层序遍历.
  *      (即先从左往右, 再从右往左进行下一层遍历, 以此类推, 层与层之间交替进行).
  */
-vector<vector<int>> zigzagLevelOrder(TreeNode* root);
+
+class No103Solution {
+private:
+    void zigzagLevelOrder(int deep, bool l2r, TreeNode* node, vector<vector<int>>& ans);
+public:
+    vector<vector<int>> zigzagLevelOrder(TreeNode* root);
+};
 #endif /* no_103_zigzag_level_order_hpp */

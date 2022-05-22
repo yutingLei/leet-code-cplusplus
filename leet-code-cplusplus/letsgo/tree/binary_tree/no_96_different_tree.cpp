@@ -37,7 +37,7 @@ using namespace std;
  */
 
 /** 枚举所有创建可能 */
-int numTrees(int start, int end) {
+int No96Solution::numTrees(int start, int end) {
     if (start > end) {
         return 0;
     }
@@ -54,7 +54,7 @@ int numTrees(int start, int end) {
     return cnt;
 }
 
-int numTrees(int n) {
+int No96Solution::numTrees(int n) {
     if (n <= 0) {
         return 0;
     }

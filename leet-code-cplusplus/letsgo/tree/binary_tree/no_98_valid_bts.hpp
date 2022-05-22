@@ -21,6 +21,10 @@
  *          节点的右子树只包含 大于 当前节点的数。
  *          所有左子树和右子树自身必须也是二叉搜索树。
  */
-bool isValidBTS(TreeNode* root);
+
+class No98Solution {
+public:
+    bool isValidBTS(TreeNode* root);
+};
 
 #endif /* no_98_valid_bts_hpp */

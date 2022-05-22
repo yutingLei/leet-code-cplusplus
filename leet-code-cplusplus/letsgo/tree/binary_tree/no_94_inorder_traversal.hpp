@@ -18,6 +18,11 @@ using namespace std;
  *
  * 描述: 给定一个二叉树的根节点 root ，返回它的 中序 遍历 。
  */
-vector<int> inorderTraversal(TreeNode* root);
+class No94Solution {
+private:
+    void classicTraversal(TreeNode* node, vector<int>& ans);
+public:
+    vector<int> inorderTraversal(TreeNode* root);
+};
 
 #endif /* no_94_inorder_traversal_hpp */

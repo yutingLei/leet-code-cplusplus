@@ -20,5 +20,9 @@
  *
  * 注: 叶子节点 是指没有子节点的节点.
  */
-bool hasPathSum(TreeNode* root, int targetSum);
+
+class No112Solution {
+public:
+    bool hasPathSum(TreeNode* root, int targetSum);
+};
 #endif /* no_112_has_path_sum_hpp */

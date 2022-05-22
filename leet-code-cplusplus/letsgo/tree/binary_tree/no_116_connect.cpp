@@ -20,7 +20,7 @@ using namespace std;
  *             是否为空来遍历这一层.
  */
 
-void helper(Node* node) {
+void No116Solution::helper(Node* node) {
     // 节点为空
     if (!node) return;
     // 是叶节点
@@ -37,7 +37,7 @@ void helper(Node* node) {
     helper(node->right);
 }
 
-Node* connect(Node* root) {
+Node* No116Solution::connect(Node* root) {
     // 1. 方法一:层序遍历法
 //    if (!root) return root;
 //    queue<Node*> q;

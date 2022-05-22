@@ -21,5 +21,13 @@ using namespace std;
  *      inorder 是同一棵树的中序遍历, 请构造二叉树并返回其根节点.
  *
  */
-TreeNode* buildTree(vector<int> preorder, vector<int> inorder);
+
+class No105Solution {
+private:
+    // 记录中序遍历中元素与位置对应关系
+    unordered_map<int, int> records;
+    TreeNode* buildTree(int pl, int pr, int il, int ir, vector<int>& preorder);
+public:
+    TreeNode* buildTree(vector<int> preorder, vector<int> inorder);
+};
 #endif /* no_105_build_tree_hpp */

@@ -16,7 +16,7 @@
  *      获得的结果反向即可.
  */
 
-vector<vector<int>> levelOrderBottom(TreeNode* root) {
+vector<vector<int>> No107Solution::levelOrderBottom(TreeNode* root) {
     vector<vector<int>> ans;
     if (!root) return ans;
     

@@ -5,10 +5,7 @@
 //  Created by admin on 2022/5/17.
 //
 
-#include <vector>
 #include "no_109_sorted_list_2_bst.hpp"
-
-using namespace std;
 
 /**
  * 本地高度相似题目108, 只不过将有序数组改为有序链表.
@@ -20,7 +17,7 @@ using namespace std;
  *          但可以先创建节点, 事后在填充节点的值.
  *
  */
-TreeNode* buildBST(int l, int r, vector<int>& nums) {
+TreeNode* No109Solution::buildBST(int l, int r, vector<int>& nums) {
     if (l > r) {
         return nullptr;
     }
@@ -32,7 +29,7 @@ TreeNode* buildBST(int l, int r, vector<int>& nums) {
     return root;
 }
 
-TreeNode* buildBST1(ListNode* head, int l, int r) {
+TreeNode* No109Solution::buildBST1(ListNode* head, int l, int r) {
     if (l > r) {
         return nullptr;
     }
@@ -45,7 +42,7 @@ TreeNode* buildBST1(ListNode* head, int l, int r) {
     return root;
 }
 
-TreeNode* sortedListToBST(ListNode* head) {
+TreeNode* No109Solution::sortedListToBST(ListNode* head) {
     if (!head) return nullptr;
     // 方法一
 //    vector<int> arr;

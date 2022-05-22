@@ -21,13 +21,10 @@
  *      4. 从中序中已知左右子树长度, 从新在后序中找到左右子树根节点, 然后重复2~3步骤.
  */
 
-// 记录中序遍历中元素与位置对应关系
-unordered_map<int, int> records;
-
 // il/ir: 中序序列下标, 计算这棵树的左右子树长度用.
 // pl/pr: 后序序列下标, 标识构建这棵树的取值范围.
 // preorder: 前序遍历序列.
-TreeNode* buildTree(int il, int ir, int pl, int pr, vector<int>& postorder) {
+TreeNode* No106Solution::buildTree(int il, int ir, int pl, int pr, vector<int>& postorder) {
     //1. 退出条件就是取值范围错误
     if (pl > pr) {
         return nullptr;
@@ -45,7 +42,7 @@ TreeNode* buildTree(int il, int ir, int pl, int pr, vector<int>& postorder) {
     return root;
 }
 
-TreeNode* buildTree(vector<int> inorder, vector<int> postorder) {
+TreeNode* No106Solution::buildTree(vector<int> inorder, vector<int> postorder) {
     for (int i = 0; i < inorder.size(); i++) {
         records[inorder[i]] = i;
     }

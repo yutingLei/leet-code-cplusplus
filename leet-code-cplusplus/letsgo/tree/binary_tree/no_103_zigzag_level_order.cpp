@@ -14,7 +14,7 @@
  * 解题思路:
  *      基本思路还是层序遍历, 不过需要增加一个标记, 而且使用队列的地方我们换为了栈
  */
-void zigzagLevelOrder(int deep, bool l2r, TreeNode* node, vector<vector<int>>& ans) {
+void No103Solution::zigzagLevelOrder(int deep, bool l2r, TreeNode* node, vector<vector<int>>& ans) {
     if (!node) {
         return;
     }
@@ -32,7 +32,7 @@ void zigzagLevelOrder(int deep, bool l2r, TreeNode* node, vector<vector<int>>& a
         zigzagLevelOrder(deep + 1, !l2r, node->right, ans);
     }
 }
-vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
+vector<vector<int>> No103Solution::zigzagLevelOrder(TreeNode* root) {
     
     vector<vector<int>> ans;
     if (!root) return ans;

@@ -19,6 +19,10 @@
  *
  * 进阶: 使用 O(n) 空间复杂度的解法很容易实现。你能想出一个只使用 O(1) 空间的解决方案吗？
  */
-void recoverTree(TreeNode* root);
+
+class No99Solution {
+public:
+    void recoverTree(TreeNode* root);
+};
 
 #endif /* no_99_recover_tree_hpp */

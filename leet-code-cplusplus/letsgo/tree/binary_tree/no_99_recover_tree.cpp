@@ -33,7 +33,7 @@ using namespace std;
  *          第一次遍历: 主要是设置遍历顺序, 能够回到根节点.
  *          第二次遍历: 第二次遍历就是遍历所有节点并且处理逻辑, 还有就是断开第一次遍历设置的循环.
  */
-void recoverTree(TreeNode* root) {
+void No99Solution::recoverTree(TreeNode* root) {
     
     // 中序遍历
     stack<TreeNode*> stk;

@@ -5,7 +5,7 @@
 //  Created by admin on 2022/5/17.
 //
 
-#include "no_108_sorted_arr_2_bts.hpp"
+#include "no_108_sorted_arr_2_bst.hpp"
 
 /**
  * 本题考察构建平衡二叉树
@@ -15,7 +15,7 @@
  *      或相差不超过1.
  *      所以题目核心就是找到合适的根节点, 使左右节点数尽量相等或相差个数最少.
  */
-TreeNode* buildBST(int l, int r, vector<int>& nums) {
+TreeNode* No108Solution::buildBST(int l, int r, vector<int>& nums) {
     if (l > r) {
         return nullptr;
     }
@@ -27,6 +27,6 @@ TreeNode* buildBST(int l, int r, vector<int>& nums) {
     return root;
 }
 
-TreeNode* sortedArrayToBTS(vector<int>& nums) {
+TreeNode* No108Solution::sortedArrayToBTS(vector<int>& nums) {
     return buildBST(0, nums.size() - 1, nums);
 }

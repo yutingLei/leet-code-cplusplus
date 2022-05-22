@@ -24,7 +24,7 @@
  * start: 元素开始范围
  * end  : 元素结束范围
  */
-vector<TreeNode*> buildTrees(int start, int end) {
+vector<TreeNode*> No95Solution::buildTrees(int start, int end) {
     // 如果范围错误, 直接退出
     if (start > end) {
         return { nullptr };
@@ -51,7 +51,7 @@ vector<TreeNode*> buildTrees(int start, int end) {
     return allTrees;
 }
 
-vector<TreeNode*> generateTrees(int n) {
+vector<TreeNode*> No95Solution::generateTrees(int n) {
     if (n <= 0) {
         return {};
     }

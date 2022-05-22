@@ -19,5 +19,11 @@
  *      路径和 是路径中各节点值的总和.
  *      给你一个二叉树的根节点 root, 返回其 最大路径和.
  */
-int maxPathSum(TreeNode* root);
+
+class No124Solution {
+private:
+    int helper(TreeNode* node);
+public:
+    int maxPathSum(TreeNode* root);
+};
 #endif /* no_124_max_path_sum_hpp */

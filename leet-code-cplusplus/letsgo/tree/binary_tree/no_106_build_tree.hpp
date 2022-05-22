@@ -21,6 +21,14 @@ using namespace std;
  *      postorder 是同一棵树的后序遍历, 请构造二叉树并返回其根节点.
  *
  */
-TreeNode* buildTree(vector<int> inorder, vector<int> postorder);
+
+class No106Solution {
+private:
+    // 记录中序遍历中元素与位置对应关系
+    unordered_map<int, int> records;
+    TreeNode* buildTree(int il, int ir, int pl, int pr, vector<int>& postorder);
+public:
+    TreeNode* buildTree(vector<int> inorder, vector<int> postorder);
+};
 
 #endif /* no_106_build_tree_hpp */

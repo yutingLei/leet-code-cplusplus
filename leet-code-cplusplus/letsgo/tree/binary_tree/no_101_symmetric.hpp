@@ -16,6 +16,12 @@
  *
  * 描述: 给你一个二叉树的根节点 root, 检查它是否轴对称.
  */
-bool isSymmetric(TreeNode* root);
+
+class No101Solution {
+private:
+    bool isSymmetric(TreeNode* node1, TreeNode* node2);
+public:
+    bool isSymmetric(TreeNode* root);
+};
 
 #endif /* no_101_symmetric_hpp */

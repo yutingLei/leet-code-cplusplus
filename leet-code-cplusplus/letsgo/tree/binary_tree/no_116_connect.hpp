@@ -19,5 +19,11 @@
  *      填充它的每个 next 指针，让这个指针指向其下一个右侧节点。如果找不到下一个右侧节点，则将 next 指针设置为 NULL。
  *      初始状态下，所有 next 指针都被设置为 NULL。
  */
-Node* connect(Node* root);
+
+class No116Solution {
+private:
+    void helper(Node* node);
+public:
+    Node* connect(Node* root);
+};
 #endif /* no_116_connect_hpp */

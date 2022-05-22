@@ -16,7 +16,7 @@
  *      2. 递归法, 使用深度优先
  */
 
-void levelOrder(int deep, TreeNode* node, vector<vector<int>>& ans) {
+void No102Solution::levelOrder(int deep, TreeNode* node, vector<vector<int>>& ans) {
     if (!node) {
         return;
     }
@@ -30,7 +30,7 @@ void levelOrder(int deep, TreeNode* node, vector<vector<int>>& ans) {
         levelOrder(deep + 1, node->right, ans);
 }
 
-vector<vector<int>> levelOrder(TreeNode* root) {
+vector<vector<int>> No102Solution::levelOrder(TreeNode* root) {
     vector<vector<int>> ans;
     if (!root) {
         return ans;

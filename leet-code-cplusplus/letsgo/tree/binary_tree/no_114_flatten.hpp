@@ -9,7 +9,10 @@
 #define no_114_flatten_hpp
 
 #include <stdio.h>
+#include <vector>
 #include "tree_node.hpp"
+
+using namespace std;
 
 /**
  * 题目114: 二叉树展开为链表
@@ -19,5 +22,11 @@
  *      展开后的单链表应该同样使用 TreeNode ，其中 right 子指针指向链表中下一个结点, 而左子指针始终为 null.
  *      展开后的单链表应该与二叉树 先序遍历 顺序相同.
  */
-void flatten(TreeNode* root);
+
+class No114Solution {
+private:
+    void traversal(TreeNode* node, vector<TreeNode*>& vec);
+public:
+    void flatten(TreeNode* root);
+};
 #endif /* no_114_flatten_hpp */

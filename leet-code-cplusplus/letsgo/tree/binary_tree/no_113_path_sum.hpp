@@ -23,5 +23,15 @@ using namespace std;
  *
  * 注: 叶子节点 是指没有子节点的节点.
  */
-vector<vector<int>> pathSum(TreeNode* root, int targetSum);
+
+class No113Solution {
+private:
+    // 用于保存最终结果
+    vector<vector<int>> ans;
+    // 用于保存每一次尝试的路径值
+    vector<int>path;
+    void helper(TreeNode* node, int targetSum);
+public:
+    vector<vector<int>> pathSum(TreeNode* root, int targetSum);
+};
 #endif /* no_113_path_sum_hpp */

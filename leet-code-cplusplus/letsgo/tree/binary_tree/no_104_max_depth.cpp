@@ -18,7 +18,7 @@ using namespace std;
  *      二: 判断节点的左右子树的深度, 然后加上自己, 即深度. 左右子树又可以分割为求它们的子树深度.
  */
 
-int maxDepth(TreeNode* root) {
+int No104Solution::maxDepth(TreeNode* root) {
     // 方法一: 使用广度优先遍历一次二叉树
 //    int depth = 0;
 //    if (!root) return depth;

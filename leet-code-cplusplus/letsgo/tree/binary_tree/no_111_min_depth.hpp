@@ -18,5 +18,9 @@
  *      最小深度是从根节点到最近叶子节点的最短路径上的节点数量.
  *      说明: 叶子节点是指没有子节点的节点.
  */
-int minDepth(TreeNode* root);
+
+class No111Solution {
+public:
+    int minDepth(TreeNode* root);
+};
 #endif /* no_111_min_depth_hpp */

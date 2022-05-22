@@ -5,10 +5,7 @@
 //  Created by admin on 2022/5/19.
 //
 
-#include <vector>
 #include "no_114_flatten.hpp"
-
-using namespace std;
 
 /**
  * 解题思路:
@@ -16,14 +13,14 @@ using namespace std;
  *          该方法需要额外的O(N)空间, N为这棵树的节点数.
  */
 
-void traversal(TreeNode* node, vector<TreeNode*>& vec) {
+void No114Solution::traversal(TreeNode* node, vector<TreeNode*>& vec) {
     if (!node) return;
     vec.emplace_back(node);
     traversal(node->left, vec);
     traversal(node->right, vec);
 }
 
-void flatten(TreeNode* root) {
+void No114Solution::flatten(TreeNode* root) {
     // 1. 前序遍历法
 //    vector<TreeNode*> vec;
 //    traversal(root, vec);
