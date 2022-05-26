@@ -22,7 +22,8 @@
 
 class No25Solution {
 private:
-    void reverseListNode(ListNode* forward, ListNode* head, ListNode* tail);
+    ListNode* reverse(ListNode* start, ListNode* end);
+    ListNode* groupKNodes(ListNode* start, int k);
 public:
     ListNode* reverseKGroup(ListNode* head, int k);
 };

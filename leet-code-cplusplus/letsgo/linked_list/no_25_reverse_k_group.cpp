@@ -15,59 +15,61 @@ using namespace std;
  *      使用一个辅助方法, 给定一个头, 将它K个节点进行翻转.
  */
 
-// 我知道链表的头和尾, 实现链表的翻转.
-// 例如: 1->2->3->4->5, 有head指向1节点, tail指向5节点
-//      翻转结果为:  5->4->3->2->1
-void No25Solution::reverseListNode(ListNode* forward, ListNode* head, ListNode* tail) {
-    if (!head) return;
-    if (head == tail) return;
+// 翻转[start...end]之间的链表
+ListNode* No25Solution::reverse(ListNode* start, ListNode* end) {
+    if (!start) return nullptr;
+    if (start == end) return start;
     
-    ListNode* pre = head;
-    stack<ListNode*> nodes;
-    while (pre != tail) {
-        nodes.push(pre);
-        pre = pre->next;
-    }
-    nodes.push(tail);
+    /// 将end记录它的下一个节点
+    end = end->next;
     
-    ListNode* last = tail->next;
-    while (!nodes.empty()) {
-        if (!forward) {
-            forward = nodes.top();
-            nodes.pop();
-            continue;
-        }
-        forward->next = nodes.top();
-        nodes.pop();
-        forward = forward->next;
+    /// 申明几个变量, 用于两两交换节点
+    ListNode* pre = nullptr;
+    ListNode* cur = start;
+    ListNode* next = nullptr;
+    
+    /// 开始逆序
+    while (cur != end) {
+        next = cur->next;
+        cur->next = pre;
+        pre = cur;
+        cur = next;
     }
-    forward->next = last;
+    start->next = end;
+    return pre;
+}
+
+// 知道一个起点, 获取它之后第k个节点
+ListNode* No25Solution::groupKNodes(ListNode* start, int k) {
+    if (!start) return nullptr;
+    while (--k > 0 && start) {
+        start = start->next;
+    }
+    return start;
 }
 
 ListNode* No25Solution::reverseKGroup(ListNode *head, int k) {
+    if (!head) return head;
+    // 记录每次翻转后的最后一个节点
     ListNode* pre = head;
-    ListNode* newHead = nullptr;
-    ListNode* forward = nullptr;
-    int num = k;
-    while (pre) {
-        ListNode* first = pre;
-        ListNode* second = nullptr;
-        while (pre && --num > 0) {
-            pre = pre->next;
-        }
-        second = pre;
-        // 重置k, pre指向下一个节点
-        num = k;
-        if (pre)
-            pre = pre->next;
-        // 已经不够K个节点了, 直接断开
-        if (!second) {
-            break;
-        } else {
-            // 逆序这一段节点
-            reverseListNode(forward, first, second);
-            forward = first;
-        }
+    
+    // 处理第一组, 用于获取head节点
+    ListNode* end = groupKNodes(head, k);
+    if (!end) {
+        return head;
     }
-    return newHead;
+    head = reverse(head, end);
+    
+    // 记录当前
+    ListNode* cur = pre->next;
+    while (cur) {
+        end = groupKNodes(cur, k);
+        if (!end) {
+            break;
+        }
+        pre->next = reverse(cur, end);
+        pre = cur;
+        cur = cur->next;
+    }
+    return head;
 }
