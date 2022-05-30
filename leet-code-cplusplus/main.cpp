@@ -14,19 +14,18 @@
 #include "no_61_rotate_right.hpp"
 #include "no_82_delete_duplicates.hpp"
 #include "no_147_insertion_sort_list.hpp"
+#include "no_22_generate_parenthesis.hpp"
+#include "no_10_is_match.hpp"
+#include "no_198_rob.hpp"
 
 using namespace std;
 
 int main(int argc, const char * argv[]) {
     
-    LLGenerator generator = LLGenerator();
+    No198Solution so = No198Solution();
+    vector<int> input = {1, 2, 3, 1};
+    cout << so.rob(input) << endl;
     
-    // 创建一个链表
-    ListNode* head = generator.create(vector<int> {3,1,2,5,4});
-    generator.print(head);
-    ListNode* reversedK = No147Solution().insertionSortList(head);
-    generator.print(reversedK);
-    generator.destroy(reversedK);
     
     return 0;
 }
