@@ -45,7 +45,7 @@ int No198Solution::process1(vector<int>& nums, int index) {
 int No198Solution::process2(vector<int> &nums) {
     size_t N = nums.size();
     // 定义dp[i]表示, 有i间房子, 可以获得的最大偷窃金额.
-    vector<int> dp[N];
+    vector<int> dp(N);
     dp[0] = nums[0];                // 一间房
     dp[1] = max(nums[1], nums[0]);  // 两间房
     for (int i = 2; i <= N; i++) {

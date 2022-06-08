@@ -17,15 +17,19 @@
 #include "no_22_generate_parenthesis.hpp"
 #include "no_10_is_match.hpp"
 #include "no_198_rob.hpp"
+#include "no_375_get_money_amount.hpp"
+#include "no_44_is_match.hpp"
+#include "no_45_jump.hpp"
+#include "no_55_can_jump.hpp"
 
 using namespace std;
 
+
 int main(int argc, const char * argv[]) {
     
-    No198Solution so = No198Solution();
-    vector<int> input = {1, 2, 3, 1};
-    cout << so.rob(input) << endl;
-    
+    No55Solution so = No55Solution();
+    vector<int> nums{1,1,2,2,0,1,1};
+    cout << (so.canJump(nums) ? "true" : "false") << endl;
     
     return 0;
 }
