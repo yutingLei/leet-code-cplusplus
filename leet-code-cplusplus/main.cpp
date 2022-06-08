@@ -21,15 +21,15 @@
 #include "no_44_is_match.hpp"
 #include "no_45_jump.hpp"
 #include "no_55_can_jump.hpp"
+#include "no_72_min_distance.hpp"
 
 using namespace std;
 
 
 int main(int argc, const char * argv[]) {
     
-    No55Solution so = No55Solution();
-    vector<int> nums{1,1,2,2,0,1,1};
-    cout << (so.canJump(nums) ? "true" : "false") << endl;
+    No72Solution so = No72Solution();
+    cout << so.minDistance("distance", "springbok") << endl;
     
     return 0;
 }
