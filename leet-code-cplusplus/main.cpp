@@ -22,14 +22,22 @@
 #include "no_45_jump.hpp"
 #include "no_55_can_jump.hpp"
 #include "no_72_min_distance.hpp"
+#include "no_85_maximal_rectangle.hpp"
 
 using namespace std;
 
 
 int main(int argc, const char * argv[]) {
     
-    No72Solution so = No72Solution();
-    cout << so.minDistance("distance", "springbok") << endl;
+    No85Solution so = No85Solution();
+    vector<vector<char>> matrix{
+//        {'1'}
+        {'1','0','1','0','0'},
+        {'1','0','1','1','1'},
+        {'1','1','1','1','1'},
+        {'1','0','0','1','0'}
+    };
+    cout << so.maximalRectangle(matrix) << endl;
     
     return 0;
 }

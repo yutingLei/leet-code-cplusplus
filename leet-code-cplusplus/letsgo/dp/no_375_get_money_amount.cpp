@@ -61,7 +61,7 @@ int No375Solution::process2(int n) {
     dp[0][0] = 0;
     dp[0][1] = 0;
     dp[0][2] = 1;
-    for (int i = 1; i <= n; i++) {
+    for (int i = 1; i < n; i++) {
         dp[i][i] = 0;
         if (i < n) {
             dp[i][i + 1] = i;

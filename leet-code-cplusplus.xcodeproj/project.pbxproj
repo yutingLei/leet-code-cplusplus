@@ -51,6 +51,7 @@
 		84FF074028489A720099E596 /* no_45_jump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84FF073E28489A720099E596 /* no_45_jump.cpp */; };
 		84FF0743284DD3FF0099E596 /* no_55_can_jump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84FF0741284DD3FF0099E596 /* no_55_can_jump.cpp */; };
 		84FF0761285036F40099E596 /* no_72_min_distance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84FF075F285036F40099E596 /* no_72_min_distance.cpp */; };
+		84FF0764285049460099E596 /* no_85_maximal_rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84FF0762285049460099E596 /* no_85_maximal_rectangle.cpp */; };
 		AB0D55E528390BE500330BBB /* select_sort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB0D55E328390BE500330BBB /* select_sort.cpp */; };
 		AB0D55E928390E2200330BBB /* swap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB0D55E728390E2200330BBB /* swap.cpp */; };
 		AB0D55EC28390F3900330BBB /* bubble_sort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB0D55EA28390F3900330BBB /* bubble_sort.cpp */; };
@@ -158,6 +159,8 @@
 		84FF0742284DD3FF0099E596 /* no_55_can_jump.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = no_55_can_jump.hpp; sourceTree = "<group>"; };
 		84FF075F285036F40099E596 /* no_72_min_distance.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = no_72_min_distance.cpp; sourceTree = "<group>"; };
 		84FF0760285036F40099E596 /* no_72_min_distance.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = no_72_min_distance.hpp; sourceTree = "<group>"; };
+		84FF0762285049460099E596 /* no_85_maximal_rectangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = no_85_maximal_rectangle.cpp; sourceTree = "<group>"; };
+		84FF0763285049460099E596 /* no_85_maximal_rectangle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = no_85_maximal_rectangle.hpp; sourceTree = "<group>"; };
 		AB0D55E328390BE500330BBB /* select_sort.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = select_sort.cpp; sourceTree = "<group>"; };
 		AB0D55E428390BE500330BBB /* select_sort.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = select_sort.hpp; sourceTree = "<group>"; };
 		AB0D55E728390E2200330BBB /* swap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = swap.cpp; sourceTree = "<group>"; };
@@ -333,6 +336,8 @@
 				84FF0742284DD3FF0099E596 /* no_55_can_jump.hpp */,
 				84FF075F285036F40099E596 /* no_72_min_distance.cpp */,
 				84FF0760285036F40099E596 /* no_72_min_distance.hpp */,
+				84FF0762285049460099E596 /* no_85_maximal_rectangle.cpp */,
+				84FF0763285049460099E596 /* no_85_maximal_rectangle.hpp */,
 			);
 			path = dp;
 			sourceTree = "<group>";
@@ -429,6 +434,7 @@
 				84BA96B72835E0E5002D9870 /* no_114_flatten.cpp in Sources */,
 				84FF073A284717260099E596 /* no_375_get_money_amount.cpp in Sources */,
 				845890C12831DEFF00D67EAF /* no_94_inorder_traversal.cpp in Sources */,
+				84FF0764285049460099E596 /* no_85_maximal_rectangle.cpp in Sources */,
 				84BA96B12835D1CC002D9870 /* no_112_has_path_sum.cpp in Sources */,
 				84BA96AE283484B4002D9870 /* no_111_min_depth.cpp in Sources */,
 				840A8800283CBA13003DFC4B /* no_23_merge_k_lists.cpp in Sources */,
