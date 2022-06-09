@@ -23,21 +23,15 @@
 #include "no_55_can_jump.hpp"
 #include "no_72_min_distance.hpp"
 #include "no_85_maximal_rectangle.hpp"
+#include "no_91_num_decodings.hpp"
 
 using namespace std;
 
 
 int main(int argc, const char * argv[]) {
     
-    No85Solution so = No85Solution();
-    vector<vector<char>> matrix{
-//        {'1'}
-        {'1','0','1','0','0'},
-        {'1','0','1','1','1'},
-        {'1','1','1','1','1'},
-        {'1','0','0','1','0'}
-    };
-    cout << so.maximalRectangle(matrix) << endl;
+    No91Solution so = No91Solution();
+    cout << so.numDecodings("11111") << endl;
     
     return 0;
 }
